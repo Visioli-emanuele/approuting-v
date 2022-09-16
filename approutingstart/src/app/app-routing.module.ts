@@ -5,7 +5,8 @@ import { FruitsComponent } from './fruits/fruits.component';
 
 const routes: Routes = [
   { path: 'animals', component: AnimalComponent},
-  { path: 'fruits', component: FruitsComponent}]; //<- Qui vanno inserite tutte le route che desideriamo creare
+  { path: 'fruits', component: FruitsComponent}, //<- Qui vanno inserite tutte le route che desideriamo creare
+  {path: '', redirectTo: '/animals', pathMatch: 'full'}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

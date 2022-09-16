@@ -1,1 +1,8 @@
-<p>fruits works!</p>
+<div class="row m-2">
+    <div class="col border" *ngFor="let FRUIT of FRUITS">
+        <div>
+            {{FRUIT.emoji}}
+            <div class="text-info">{{ FRUIT.name}}</div>
+        </div>
+    </div>
+</div>
